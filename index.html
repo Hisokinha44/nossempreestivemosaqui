@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #ffb400;
+            --secondary: #ff7e01;
+            --accent: #ff4375;
+            --light: #ff9aba;
+            --pale: #ffdbc5;
+        }
+
+        body {
+            background-color: var(--pale);
+        }
+
+        .container {
+            border: 3px solid var(--secondary);
+            background-color: white;
+        }
+
+        .title {
+            color: var(--primary);
+        }
+
+        .link {
+            color: var(--accent);
+        }
+
+        .hover-effect {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .hover-effect::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: currentColor;
+            transition: width 0.3s ease;
+        }
+
+        .hover-effect:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-gray-50 flex items-center justify-center p-4 md:p-8">
+    <div class="w-full max-w-4xl bg-white rounded-xl shadow-lg overflow-hidden container">
+        <div class="p-6 md:p-10">
+            <div class="mb-8">
+                <div class="text-gray-700 text-lg leading-relaxed mb-8">
+                    <p class="italic opacity-70">Links para páginas individuais</p>
+                </div>
+
+                <!-- Links container -->
+                <div class="space-y-4">
+                    <ul class="flex flex-col gap-4">
+                        <li><a href="1.html" class="link hover-effect text-xl md:text-2xl font-medium">Bayard Rustin</a></li>
+                        <li><a href="2.html" class="link hover-effect text-xl md:text-2xl font-medium">Audre Lorde</a></li>
+                        <li><a href="3.html" class="link hover-effect text-xl md:text-2xl font-medium">Maria Firmina dos Reis</a></li>
+                        <li><a href="4.html" class="link hover-effect text-xl md:text-2xl font-medium">Claude Cahun</a></li>
+                        <li><a href="5.html" class="link hover-effect text-xl md:text-2xl font-medium">Lelah Assumpçâo</a></li>
+                        <li><a href="6.html" class="link hover-effect text-xl md:text-2xl font-medium">Simon Nkoli</a></li>
+                        <li><a href="7.html" class="link hover-effect text-xl md:text-2xl font-medium">Sylvia Rivera</a></li>
+                        <li><a href="8.html" class="link hover-effect text-xl md:text-2xl font-medium">Rosetta Tharpe</a></li>
+                        <li><a href="9.html" class="link hover-effect text-xl md:text-2xl font-medium">Tibira do Maranhão</a></li>
+                        <li><a href="10.html" class="link hover-effect text-xl md:text-2xl font-medium">Maria Carolina de Jesus</a></li>
+                        <li><a href="11.html" class="link hover-effect text-xl md:text-2xl font-medium">Alan Turing</a></li>
+                        <li><a href="12.html" class="link hover-effect text-xl md:text-2xl font-medium">Crystal LaBeija</a></li>
+                        <li><a href="13.html" class="link hover-effect text-xl md:text-2xl font-medium">William Dorsey Swann</a></li>
+                        <li><a href="14.html" class="link hover-effect text-xl md:text-2xl font-medium">Rosalind Franklin</a></li>
+                        <li><a href="15.html" class="link hover-effect text-xl md:text-2xl font-medium">Dandara dos Palmares</a></li>
+                        <li><a href="16.html" class="link hover-effect text-xl md:text-2xl font-medium">Espertirina Augusta Martins</a></li>
+                        <li><a href="17.html" class="link hover-effect text-xl md:text-2xl font-medium">Antonieta de Barros</a></li>
+                        <li><a href="18.html" class="link hover-effect text-xl md:text-2xl font-medium">As Mulheres do ENIAC</a></li>
+                        <hr>
+                        <p style="text-align: center;">&copy; Todos os direitos reservados, Arthur Ferreira</p>
+                        <p style="text-align: center; color: blue;"><a href="sobre.html">Sobre</a></p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('.hover-effect');
+
+            links.forEach(link => {
+                link.addEventListener('mouseenter', function () {
+                    this.style.transform = 'translateX(8px)';
+                });
+
+                link.addEventListener('mouseleave', function () {
+                    this.style.transform = 'translateX(0)';
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

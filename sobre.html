@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nós</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .team-member-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-gray-50 to-blue-50 min-h-screen font-sans">
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <h1 class="text-3xl font-bold text-blue-800">Sobre nossa equipe</h1>
+            <p class="text-gray-600 mt-2"></p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-8">
+        <section class="mb-16 text-center">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Quem nós somos</h2>
+            <div class="h-1 w-20 bg-blue-600 mx-auto mb-8"></div>
+            <p class="text-gray-600 max-w-3xl mx-auto">
+                Somos um grupo de estudantes do ensino médio do Instituto Federal de Educação, Ciência e Tecnologia do
+                Rio Grande do Norte, do campus Currais Novos (IFRN/CN), no curso técnico integrado em informática.
+            </p>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-8 text-center">A equipe</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Arthur Santos Ferreira -->
+                <div
+                    class="team-member-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 fade-in">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <img src="assets/Imagens/arthurferreira3.jpg" style="border-radius: 5px;">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Arthur Santos Ferreira</h3>
+                        <p class="text-gray-600 italic">De 16 anos, web designer e programador, natural de Santa
+                            Cruz(RN), está no segundo ano do
+                            ensino médio. Ficando mais à parte na pesquisa, foi o principal responsável pela confeccção
+                            das páginas web.</p>
+                    </div>
+                </div>
+
+                <!-- Luís Galvão -->
+                <div
+                    class="team-member-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 fade-in">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <img src="assets/Imagens/luis_galvao.jpg" style="border-radius: 5px;">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Luís Galvão</h3>
+                        <p class="text-gray-600 italic">De 16 anos, natural de Currais Novos(RN). Está no segundo ano do
+                            Curso Técnico Integrado de Informática, no IFRN. Líder do projeto e responsável pela
+                            pesquisa e confecção da instalação artística no IFRN - Campus Currais.</p>
+                    </div>
+                </div>
+
+                <!-- John Wesley -->
+                <div
+                    class="team-member-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 fade-in">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <img src="assets/Imagens/john2.jpg" style="border-radius: 5px;">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">John Wesley</h3>
+                        <p class="text-gray-600 italic">De 16 anos, músico, natural de Currais Novos(RN). Está no
+                            segundo ano do
+                            Curso Técnico Integrado de Informática, no IFRN. Participou assiduamente no desenvolvimento
+                            das pesquisas.</p>
+                    </div>
+                </div>
+
+                <!-- Fabriny Medeiros -->
+                <div
+                    class="team-member-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 fade-in">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <img src="assets/Imagens/fabriny2.jpg" style="border-radius: 5px;">
+
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Fabriny Medeiros</h3>
+                        <p class="text-gray-600 italic">De 16 anos, natural de Currais Novos(RN). Está no segundo ano do
+                            Curso Técnico Integrado de Informática, no IFRN. Teve como principal contribuição o
+                            desenvolvimento das atividades de pesquisa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 bg-white rounded-lg shadow-md p-8 fade-in">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">Sobre o trabalho</h2>
+            <div class="h-1 w-20 bg-blue-600 mb-6"></div>
+            <div class="prose max-w-full text-gray-600" id="aboutWorkContent">
+                O grupo optou por fazer uma instalação. A temática escolhida foi o apagamento histórico sofrido tanto
+                por mulheres, como também negros e pessoas LGBT durante a história. A escolha de tal se deve pela
+                temática proposta: “A sociedade e a imposição de padrões”, o que fez os componentes refletirem sobre
+                como pessoas que não estavam dentro de certas normas sociais em determinados espaços históricos e
+                físicos, e como ao desafiar estes padrões sociais, eles acabaram com suas histórias apagadas, ou sem
+                reconhecimento de seus feitos. Em suma, o grupo decidiu resgatar os passados esquecidos pela sociedade,
+                e colocar estes nomes em evidência.
+                Ademais, a principal história que inspirou o grupo foi a de Tibira, o indigena que sofreu o primeiro
+                caso de LGBTfobia no Brasil durante o período da colonização. O fato de que a sua história não é
+                contada, nem evidenciada pela sociedade, mesmo quando feito recortes específicos em grupos LGBTS, fez
+                com que os discentes tivessem essa ideia.
+            </div>
+        </section>
+
+        <section class="mb-16 bg-white rounded-lg shadow-md p-8 fade-in">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">Referências bibliográficas da pesquisa</h2>
+            <div class="h-1 w-20 bg-blue-600 mb-6"></div>
+            <div class="space-y-2 text-gray-600" id="referencesContent">
+                <p>https://www.bbc.com/portuguese/internacional-55462549
+
+                    https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2023-05/quem-foi-o-indigena-tibira-o-1o-assassinado-pela-lgbtfobia-no-brasil
+
+                    https://jornal.usp.br/cultura/carolina-maria-de-jesus-e-referencia-para-quem-contesta-o-poder/
+
+                    https://brasilescola.uol.com.br/literatura/carolina-maria-jesus.htm
+
+                    [http://www.letras.ufmg.br/literafro/29-critica-de-autores-feminios/1024-a-importancia-da-leitura-e-da-escrita-para-carolina-maria-de-jesus-uma-analise-do-seu-quarto-de-despejo-elisangela-aparecida-lopes#::text=É
+                    através da escrita que,no “quarto de
+                    despejo”](http://www.letras.ufmg.br/literafro/29-critica-de-autores-feminios/1024-a-importancia-da-leitura-e-da-escrita-para-carolina-maria-de-jesus-uma-analise-do-seu-quarto-de-despejo-elisangela-aparecida-lopes#::text=%C3%89%20atrav%C3%A9s%20da%20escrita%20que,no%20%E2%80%9Cquarto%20de%20despejo%E2%80%9D)
+
+                    https://www.biography.com/activists/bayard-rustin
+
+                    https://aventurasnahistoria.com.br/noticias/reportagem/bayard-rustin-o-ativista-que-sofreu-boicote-do-proprio-movimento-por-ser-gay.phtml
+
+                    https://jornal.usp.br/ciencias/pioneiro-e-ridicularizado-alan-turing-desafiou-suposta-superioridade-da-inteligencia-humana/
+
+                    https://brasilescola.uol.com.br/biografia/alan-mathison.htm
+
+                    https://www.ufrgs.br/alanturingbrasil2012/Maquina_de_Turing.pdf
+
+                    https://www.britannica.com/topic/Bombe
+
+                    https://blurredbylines.com/articles/crystal-labeija-drag-queen-house-ballrooom-culture/
+
+                    https://primeirosnegros.com/ballroom/
+
+                    https://www.royalhouseoflabeija.com/history
+
+                    [https://www.napontadope.com/entenda-o-que-e-vogue-estilo-de-danca-com-forte-influencia-da-moda/#::text=Mais
+                    que um estilo de,e clipe Vogue%2C da
+                    Madonna](https://www.napontadope.com/entenda-o-que-e-vogue-estilo-de-danca-com-forte-influencia-da-moda/#::text=Mais%20que%20um%20estilo%20de,e%20clipe%20Vogue%2C%20da%20Madonna).
+
+                    https://aventurasnahistoria.com.br/noticias/reportagem/william-dorsey-swann-o-ex-escravo-que-se-tornou-a-primeira-drag-queen-autointitulada.phtml
+
+                    https://www.smithsonianmag.com/history/the-first-self-proclaimed-drag-queen-was-a-formerly-enslaved-man-180982311/
+
+                    [https://socialwelfare.library.vcu.edu/federal/emancipation-proclamation-1862/#::text=Em 22 de
+                    setembro de,1º de janeiro de 1863.&text=A Guerra Civil começou em,estados de deixar a
+                    
+
+                    https://horizontes.sbc.org.br/index.php/2022/06/lynn-ann-conway-uma-pioneira-em-segredo-que-transformou-sonhos-em-realidade/
+
+                    [https://www.analog.com/en/resources/glossary/vlsi.html#::text=Integração em escala muito grande,é
+                    como definir
+                    
+
+                    https://www.washingtonpost.com/obituaries/2024/06/13/lynn-conway-dead/</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-semibold mb-2"><a href="index.html" style="color: blue;">Clique aqui</a> e
+                        retorne à página principal.</h3>
+                    <h3 class="text-xl font-semibold mb-2">Contatos:</h3>
+                    <p class="text-gray-400">Arthur: (84) 99667-3364</p>
+                    <p class="text-gray-400">Luís: (84) 99951-3417</p>
+                    <p class="text-gray-400">John: (84) 99602-6543</p>
+                    <p class="text-gray-400">Fabriny: (84) 99635-9490</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-6 pt-6 text-sm text-gray-400 text-center">
+                <p>&copy; Todos os direitos reservados, 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const fadeElements = document.querySelectorAll('.fade-in');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            fadeElements.forEach(el => {
+                el.style.opacity = 0;
+                observer.observe(el);
+            });
+
+        });
+    </script>
+</body>
+
+</html>
